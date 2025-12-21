@@ -104,11 +104,28 @@ main {
 
 #image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     filter: grayscale(100%);
     border: 4px solid #e1e6ea;
     box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
-    opacity: 0.5;
+    opacity: 0.3;
+}
+
+#image{
+    position: relative;
+    min-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    container-type: inline-size; /* 親要素を基準にする宣言 */
+}
+
+#main_text {
+    font-size: 4cqw;
+    color: #444444;
+    position: absolute; /* 親要素を基準に浮く */
+    bottom: 5%;    /* 下から5%の位置に配置 */
+    width: 80cqw;
 }
 
 @media screen and (max-width: 900px) {

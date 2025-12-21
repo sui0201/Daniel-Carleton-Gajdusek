@@ -28,9 +28,9 @@
             </section>
 
             <section id="buttons">
-                <button name="save">.txtで保存</button>
-                <button name="save">.pngで保存</button>
-                <button name="save">入力をリセット</button>
+                <button name="save" onclick="exportText()">.txtで保存</button>
+                <button name="save" onclick="exportImage()">.pngで保存</button>
+                <button name="save" onclick="resetTextArea()">入力をリセット</button>
             </section>
 
         </div>
@@ -39,11 +39,13 @@
 
             <section id="image">
                 <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSZDGXB_YPxiP0hDeWl43VZfB7CQTXfbjPaLuB46ggpU-j5Tulhe0ERYkfXadRzyV65OxK7JmItlDP-JTc" alt="Daniel Carleton Gajdusek" width="50%">
+                <p id="main_text"><b>お前さあ、<br></b><b id="maininnertext">"ここにテキストが表示"</b><b><br>すぐ結び付けたがる。</b></p>
             </section>
 
         </div>
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="common.js"></script>
 </body>
 </html>

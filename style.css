@@ -89,7 +89,8 @@ main {
 
 #buttons button {
     padding: 12px 28px;
-    font-size: 15px;
+    flex: 1;
+    font-size: 14px;
     border-radius: 25px;
     border: none;
     background-color: #3a6ea5;

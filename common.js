@@ -59,3 +59,16 @@ function exportText() {
   // 5. 使い終わったメモリを解放
   URL.revokeObjectURL(dataUrl);
 }
+
+async function copyToClipboard() {
+  // コピーしたいテキストを取得
+  const text = document.getElementById("main_text").innerText;
+
+  try {
+    // クリップボードに書き込み
+    await navigator.clipboard.writeText(text);
+    alert("コピーしました！");
+  } catch (err) {
+    console.error("コピーに失敗しました", err);
+  }
+}

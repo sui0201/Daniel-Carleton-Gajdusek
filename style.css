@@ -89,7 +89,7 @@ main {
 }
 
 #buttons button {
-    padding: 12px 28px;
+    padding: 12px;
     flex: 1;
     font-size: 14px;
     border-radius: 25px;

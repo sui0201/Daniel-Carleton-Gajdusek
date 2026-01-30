@@ -124,7 +124,7 @@ main {
 }
 
 #main_text {
-    font-size: clamp(14px,4vw,24px)
+    font-size: clamp(14px,4vw,24px);
     color: #444444;
     position: absolute; /* 親要素を基準に浮く */
     bottom: 5%;    /* 下から5%の位置に配置 */
